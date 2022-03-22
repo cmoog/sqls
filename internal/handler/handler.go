@@ -147,7 +147,7 @@ func (s *Server) handleInitialize(ctx context.Context, conn *jsonrpc2.Conn, req 
 		Capabilities: lsp.ServerCapabilities{
 			TextDocumentSync:   lsp.TDSKFull,
 			HoverProvider:      true,
-			CodeActionProvider: true,
+			CodeActionProvider: false,
 			CompletionProvider: &lsp.CompletionOptions{
 				TriggerCharacters: []string{"(", "."},
 			},
