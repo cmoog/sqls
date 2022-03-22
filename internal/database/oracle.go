@@ -6,13 +6,13 @@ import (
 	"log"
 	"strconv"
 
-	_ "github.com/godror/godror"
+	// _ "github.com/godror/godror"
 	"github.com/lighttiger2505/sqls/dialect"
 )
 
 func init() {
-	RegisterOpen("oracle", oracleOpen)
-	RegisterFactory("oracle", NewOracleDBRepository)
+	// RegisterOpen("oracle", oracleOpen)
+	// RegisterFactory("oracle", NewOracleDBRepository)
 }
 
 func oracleOpen(dbConnCfg *DBConfig) (*DBConnection, error) {
