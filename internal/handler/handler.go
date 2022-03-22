@@ -159,8 +159,8 @@ func (s *Server) handleInitialize(ctx context.Context, conn *jsonrpc2.Conn, req 
 				},
 			},
 			DefinitionProvider:              true,
-			DocumentFormattingProvider:      true,
-			DocumentRangeFormattingProvider: true,
+			DocumentFormattingProvider:      false,
+			DocumentRangeFormattingProvider: false,
 			RenameProvider:                  true,
 		},
 	}
